@@ -1,0 +1,16 @@
+// Sketch grammar (not used by default; kept for future learned parsers)
+start: op+
+op: "UNION" "(" ALIAS "," ALIAS ")"      -> union
+  | "INTER" "(" ALIAS "," ALIAS ")"      -> inter
+  | "COMPL" "(" ALIAS ")"                -> compl
+  | "CONCAT" "(" ALIAS "," ALIAS ")"     -> concat
+  | "STAR" "(" ALIAS ")"                 -> star
+  | "REVERSE" "(" ALIAS ")"              -> reverse
+  | "REPLACE_OPERAND" "(" ALIAS ")"      -> replace_operand
+  | "REPLACE_OPERATOR" "(" ALIAS "," OPERATOR_KIND ")" -> replace_operator
+  | "REPEAT" "(" ALIAS "," NUMBER "," NUMBER ")" -> repeat
+
+ALIAS: /r[0-9]+/ | /f[0-9]+/
+OPERATOR_KIND: "UNION" | "INTER" | "CONCAT" | "STAR" | "COMPL" | "REVERSE"
+%import common.NUMBER
+%ignore /\s+/

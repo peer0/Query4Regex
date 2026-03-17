@@ -1,0 +1,28 @@
+UNION:
+  - "Take the union of {r1} and {r2}."
+  - "Allow strings matched by either {r1} or {r2}."
+  - "Combine {r1} and {r2} using union."
+INTER:
+  - "Compute the intersection of {r1} and {r2}."
+  - "Require both {r1} and {r2} to hold."
+  - "Match strings satisfying {r1} and {r2} simultaneously."
+COMPL:
+  - "Take the complement of {r1}."
+  - "Match strings not matched by {r1}."
+CONCAT:
+  - "Concatenate {r1} then {r2}."
+  - "Match {r1} followed by {r2}."
+STAR:
+  - "Apply Kleene star to {r1}."
+  - "Allow zero or more repetitions of {r1}."
+REVERSE:
+  - "Reverse {r1}."
+  - "Match the reversal of {r1}."
+REPLACE_OPERAND:
+  - "In {r1}, replace {frag1} with {r2}."
+REPLACE_OPERATOR:
+  - "In {r1}, change all {old_op} operators to {new_op}."
+  - "In {r1}, replace all occurrences of {old_op} with {new_op}."
+REPEAT:
+  - "Repeat {r1} between {min_rep} and {max_rep} times."
+  - "Allow {r1} to occur from {min_rep} to {max_rep} times."

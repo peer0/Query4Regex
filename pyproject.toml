@@ -1,0 +1,9 @@
+[project]
+name = "query4regex"
+version = "0.1.0"
+description = "Natural-language guided regex transformation benchmark"
+requires-python = ">=3.10"
+dependencies = []
+
+[tool.setuptools]
+packages = ["query4regex"]
