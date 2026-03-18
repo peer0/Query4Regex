@@ -219,7 +219,7 @@ If you use this repository, please cite the Query4Regex paper.
 @article{HahnH26,
   title={{Query4Regex}: Verifiable Regex Transformation through Formal Operations from NL and DSL Queries},
   author={Joonghyuk Hahn and Yo-Sub Han},
-  booktitle={Proceedings of the 2026 Conference of the European Chapter of the Association for Computational Linguistics, {EACL}},
+  booktitle={Findings of the 2026 Conference of the European Chapter of the Association for Computational Linguistics, {EACL}},
   year={2026},
   url={To be updated.}
 }
